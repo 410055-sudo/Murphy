@@ -1,0 +1,73 @@
+<html>
+<head>
+     <title>0922-CSS簡介</title>
+     <style>/* css註解 */ 
+          /* css 語法
+          選擇器(selector) {
+            屬性:設定;
+            屬性:設定;
+            屬性:設定;
+     }
+ */
+            
+/*選擇器 
+     tag(html標籤) ex:div
+      #id  ex:#d1 #d2
+      .class  ex:c1 c2
+ */ 
+    div{
+    width:200px;
+    height: 100px;
+    color:  biue;
+    display: inline-block;
+}
+ 
+    .c1{
+      background: pink;
+    }
+    .c2{
+     background: hsl(0,100%,50% );
+    
+    
+    }
+/* css的眼色協法
+  1.英文名稱
+  2.rgb(r 0-255,g 0-255,b 0-255)
+  3.hsl(色相0-360 彩度0-100% 亮度0-100% )
+  4.rgba(r,g,b 可見度0-1)
+  5.hsla(hys,l,a)
+  6.色碼(#rrggbb)
+*/
+ /* 
+     display: block/inline/inline-block;
+    block:區塊元素
+    inlinec;杭內元素
+ 
+ 
+ 
+ 
+ 
+ </style>
+</head>
+<body>
+    <!--id:必須獨一無二,字母開頭
+        class:類別,不須獨一無二 ,字母開頭,可共用,可多重,用空白間隔
+    -->
+    <div id="d1" class="c1"></div>
+     <div id="d2" class="c2"></div>
+     <div id="d3" class="c1"></div>
+     <div id="d4" class="c1 c2"></div>
+    
+    
+    
+    <span></span>
+
+
+
+
+
+
+
+
+</body>
+</html>
