@@ -1,0 +1,37 @@
+<html>
+<head>
+   <title>css漸層</title>
+    <style>
+      div{
+       margin-bottom: 5px
+      }
+       #d1{
+         height:100px;
+         width:400px;
+         /* to : top bottom right left*/
+         /*0-360deg(degree) 由上開始順時針方向*/
+         backgound:linear-gradient(to right red,yellow);
+      }
+         #d2{
+         height:100px;
+         width:400px;
+         backgound:linear-gradient(50deg, red,orange,yellow,green,blue,indigo,violet);
+      }
+    #d3{
+         height:100px;
+         width:400px;
+         backgound:linear-gradient(to right red,blue 50%,violet);
+      }
+#d3{
+         height:100px;
+         width:400px;
+         backgound:linear-gradient(to right red,blue 50%,violet);
+      }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+</body>
+</html>
