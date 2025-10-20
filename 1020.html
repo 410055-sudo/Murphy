@@ -1,0 +1,100 @@
+<html>
+<head>
+   <title>css漸層-動畫</title>
+    <style>
+      div{
+        margin:5px;
+      }
+      @keyframes k1{
+    0%{backgound: linear-gradient(90deg,red,white 50%, blue); }
+    13%{backgound: linear-gradient(90deg,red,white 70%,blue); }
+    25%{backgound: linear-gradient(90deg,red,white,90%blue); }
+    37%{backgound: linear-gradient(90deg,red,white,70%blue); }
+    50%{backgound: linear-gradient(90deg,red,white,50%blue); }
+    63%{backgound: linear-gradient(90deg,red,white,30%blue); }
+    75%{backgound: linear-gradient(90deg,red,white,10%blue); }
+    87%{backgound: linear-gradient(90deg,red,white,30%blue); }
+    100%{backgound: linear-gradient(90deg,red,white,50%blue); }
+    }
+      }
+      #a1{
+        height: 50px;
+        width:50px;
+        animation:k1 1s infinite linear;
+      }
+       @keyframes k2{
+    0%{backgound: linear-gradient(0deg,red,white 50%, blue); }
+    8%{backgound: linear-gradient(30deg,red,white 70%,blue); }
+    17%{backgound: linear-gradient(60deg,red,white,90%blue); }
+    25%{backgound: linear-gradient(90deg,red,white,70%blue); }
+    33%{backgound: linear-gradient(120deg,red,white,50%blue); }
+    42%{backgound: linear-gradient(150deg,red,white,30%blue); }
+    50%{backgound: linear-gradient(180deg,red,white,10%blue); }
+    58%{backgound: linear-gradient(210deg,red,white,30%blue); }
+    66%{backgound: linear-gradient(240deg,red,white,50%blue); }
+    75%{backgound: linear-gradient(270deg,red,white,30%blue); }
+    83%{backgound: linear-gradient(300deg,red,white,10%blue); }
+    92%{backgound: linear-gradient(330deg,red,white,30%blue); }
+    100%{backgound: linear-gradient(360deg,red,white,30%blue); 
+    }
+     #a2{
+        height: 150px;
+        width:400px;
+        animation:k2 1s infinite linear;
+      }
+      @keyframes k3{
+    0%{backgound: radial-gradient(circle,red,white 50%, blue); }
+    25%{backgound: radial-gradient(circle,red,white 70%,blue); }
+    50%{backgound: radial-gradient(circle,red,white,90%blue); }
+    75%{backgound: radial-gradient(circle,red,white,70%blue); }
+    100%{backgound: radial-gradient(circle,red,white,50%blue); }
+    }
+     #a3{
+        height: 150px;
+        width:400px;
+        animation:k3 1s infinite linear;
+     }
+     @keyframes k4{
+    0%{backgound: repeating-radial-gradient(circle,red,white 50%, blue); }
+    25%{backgound:repeating-radial-gradient(circle,red,white 70%,blue); }
+    50%{backgound: repeating-radial-gradient(circle,red,white,90%blue); }
+    75%{backgound: repeating-radial-gradient(circle,red,white,70%blue); }
+    100%{backgound: repeating-radial-gradient(circle,red,white,50%blue); }
+    }
+    #a4{
+        height: 150px;
+        width:400px;
+        animation:k4 1s infinite linear;
+     }
+      @keyframes k5{
+    0%{backgound: repeating-conic-gradient(circle,red,white 50%, blue); }
+    25%{backgound:repeating-conic-gradient(circle,red,white 70%,blue); }
+    50%{backgound: repeating-conic-gradient(circle,red,white,90%blue); }
+    75%{backgound:repeating-conic-gradient(circle,red,white,70%blue); }
+    100%{backgound: repeating-conic-gradient(circle,red,white,50%blue); }
+    }
+    #a5{
+        height: 150px;
+        width:400px;
+        animation:k5 1s infinite linear;
+     }
+  @keyframes k6{
+    0%{backgound: hsl(0deg,30%,70%); }
+    25%{backgound:hsl(72deg,30%,70%)); }
+    50%{backgound: hsl(144deg,30%,70%); }
+    75%{backgound:hsl(216deg,30%,70%); }
+    100%{backgound: hsl(360deg,30%,70%); }
+    }
+    body{        
+        animation:k6 1s infinite linear;
+     }
+    </style>
+</head>
+<body>
+    <div id="a1"></div>
+    <div id="a2"></div>
+    <div id="a3"></div>
+    <div id="a4"></div>
+    <div id="a5"></div>
+    <div id="a6"></div>
+</html>
