@@ -1,0 +1,72 @@
+<html>
+<head>
+   <title>容器與框線</title>
+   <style>
+    /**
+       width寬 height 高
+       padding填充
+       margin邊界
+       border 框線
+           width線寬
+           color
+           style 
+              solid實線
+              dashe虛線
+              dotted點
+              double雙線
+              radius 圓角
+              top/right/bottom/left
+              top/x軸/bottom            上/左右相同/下
+              y軸/x軸                   上下/左右    
+              四邊                      四邊相同
+              */
+        #d1{
+         height: 200px;
+         width: 300px;
+         border: 1px black solid;
+        background-color: azure;
+      }
+      #d2{
+         height: 0px;
+         width: 0px;
+         border: 100px black solid;
+         padding: 50px 100px 150px 200px;
+      }     
+    #d3{
+         height: 200px;
+         width: 300px;
+         border: 20px black solid;
+         border-style: solid dashed double dotted;
+         border-width: 50px 100px 150px ;
+      }
+      
+      #d4{
+         height: 0px;
+         width: 0px;
+         border: 100px black solid;
+         border-radius:50%;
+      }
+      #d5{
+         height: 200px;
+         width: 300px;
+         border: 1px black solid;
+         border-color: red yellow green blue;
+      }
+      #d6{
+         height: 0px;
+         width: 0px;
+         border: 100px black solid;
+         border-color: red yellow green transparent;
+         border-width: 50px 100px 150px 200px;
+      }
+   </style>
+   </head>
+   <body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    </body>
+</html>

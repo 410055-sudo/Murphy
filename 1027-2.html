@@ -1,0 +1,70 @@
+<html>
+<head>
+   <title>c位移及變形</title>
+    <style>
+        /**
+         position: relative/absolut
+            relative 
+            absolut
+        */
+         #d7{
+         height: 100px;
+         width: 100px;
+         background:skyblue;
+        }     
+        #d8{
+         height: 0px;
+         width: 0px;
+        background:seagreen;
+        position: relative;
+        top: 20px;
+        left: 40px;
+        }
+        #d9{
+         height: 100px;        
+        }     
+        #d10{
+         height: 400px;
+         width: 300px;
+         border: 1px soolid black;
+         position: absolute;
+         left:50px;    
+        }
+        #d11{
+         height: 100px;
+         width: 100px;
+         background:blue;
+        } 
+        #d12{
+         height: 100px;
+         width: 100px;
+         background:seagreen;
+         position: absolute;
+         top: 20px;
+         left: 40px;
+        }
+        /** transform 變形
+        rotate
+        translate
+        scale(x,y)
+        */
+        #d13{
+         height: 100px;
+         width: 200px;
+         background:seagreen;
+         transform: rotate(45deg) translate(50px,20px) scale(0,1,1,5);
+        }
+    </style>
+    
+    <body>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>  
+     <div id="d10"></div>
+    <div id="d11"></div>
+    <div id="d12"></div>
+     <div id="d13"></div>
+    <div id="d14"></div>
+    <div id="d15"></div>
+    </body>
+    </html>
