@@ -1,38 +1,63 @@
 <html>
     <head>
-        <titl>方塊點擊遊戲</title>
+        <titl>方塊點擊</title>
         <style>
             #gameArea{
-                width:800px;
-                height:500px;
-                border:5px solid rgb(105, 15, 15) ;
+                width:596px;
+                height:260px;
+                border:5px solid rgb(18, 228, 130) ;
                 border-style:double;
-                margin: 10px ;
+                margin: auto ;
                 position:relative;
-                background-color:rgb(236, 168, 19);
-
+                background: url("pic/0105-1.png");
             }
             #box{
-                width:50px;
-                height:50px;
-                background-color:rgb(47, 103, 177);
+                width:40px;
+                height:40px;
+                background-color: rgb(40, 116, 90);        
                 position:absolute;
-
-
-            }
-            
-            
+                cursor: pointer;
+            }            
         </style>
-        <script>
-
-            
-        </script>
     </head>
     <body>
+
+        <h1>分數:<span id="score">0</span>分</h1>
+    <h2>時間:<span id="time">20</span>秒</h2>
         <div id="gameArea">
             <div id="box"></div>
         </div>
-    <h2>得分:<span id="score">0</span>分</h2>
-    <h2>時間:<span id="time">30</span></h2>
+        <script>
+            let score=0;
+            let timeLeft=20;
+            const box = document.getElementById("box");
+            const scoreText = document.getElementById("score");
+            const timeText = document.getElementById("time");
+
+            function moveBox (){
+                const x = Math.random() * 550;
+                const y = Math.random() * 210;
+                box.style.left = x +"px";
+                box.style.top = y +"px";   
+            }
+            box.onclick = function(){
+                if(timeLeft > 0){
+                    score++;
+                    scoreText.innerText= score;
+                    moveBox();
+                }         
+            };
+            const timer = setInterval(function (){
+                timeLeft--;
+                timeText.innerText = timeLeft;
+                
+                if (timeLeft == 0){
+                    clearInterval(timer);
+                    box.style.display = "none";
+                    alert ("END! 你的分數是:"+ score );
+                }
+            },1000);
+            moveBox();
+        </script>
     </body>
 </html>
